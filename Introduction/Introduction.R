@@ -1,0 +1,5 @@
+print("My name is Mikael Quintos")
+print("I was born in Quezon City on March 20, 2001")
+print("I love to play Grand Theft Auto and Magic the Gathering")
+print("I'm in love with Hip Hop music and Korean Music")
+print("I don't love spicy food")
