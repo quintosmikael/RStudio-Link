@@ -1,0 +1,126 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Module 3 Individual Quiz},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Module 3 Individual Quiz}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+\hypertarget{section}{%
+\subsubsection{}\label{section}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Brand A gasoline was used in 16 similar automobiles under identical
+  conditions. The corresponding sample of 16 values (miles per gallon)
+  had mean 19.6 and standard deviation 0.4. Under the same conditions,
+  high-power brand B gasoline gave a sample of 16 values with mean 20.2
+  and standard deviation 0.6. Is the mileage of B significantly better
+  than that of A? Assume normality. Test the hypothesis using both
+  P-value and fixed significance level with α=0.05 approaches (if
+  possible).
+\end{enumerate}
+
+Where:
+
+n = 16,
+
+\(\mu_{a}\) = 19.6
+
+\(\sigma_{a}\) = 0.4
+
+\(\mu_{b}\) = 20.2
+
+\(\sigma_{b}\) = 0.6
+
+\hypertarget{section-1}{%
+\subsubsection{}\label{section-1}}
+
+\(H_{0}\) = \(\mu_{a}\) - \(\mu_{b}\) \textless{} 0
+
+\(H_{1}\) = \(\mu_{a}\) - \(\mu_{b}\) \textgreater{} 0
+
+\hypertarget{section-2}{%
+\subsubsection{}\label{section-2}}
+
+\(\sigma^2_{a}\) = \(0.4^2\)
+
+\(s_{a}\) = 0.16
+
+\(\sigma^2_{b}\) = \(0.6^2\)
+
+\(s_{b}\) = 0.36
+
+\hypertarget{section-3}{%
+\subsubsection{}\label{section-3}}
+
+\(z_0\) =
+\(\frac{(\mu_{a}-\mu_{b})-D_0}{\sqrt{\frac{s_{a}}{n_{a}} - \frac{s_{b}}{n_{b}}}}2a}\)
+
+\end{document}

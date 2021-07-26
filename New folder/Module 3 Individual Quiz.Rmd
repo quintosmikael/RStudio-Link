@@ -1,0 +1,187 @@
+---
+title: "Module 3 Individual Quiz"
+author: Mikael Cholo C. Quintos
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{css, echo=FALSE}
+h1, h4 {
+  text-align: center;
+  color: black;
+  font-family: Arial;
+}
+```
+
+*** 
+
+1. The life in hours of a battery is known to be approximately normally distributed with standard deviation σ=1.25 hours. A random sample of 10 batteries has a mean life of $\bar{x}$ = 40.5 hours.
+
+A. 
+Is there evidence to support the claim that battery life exceeds 40 hours? Use α=0.05.
+
+<center>
+$z = \frac{40.5 - 40}{\frac{1.25}{\sqrt10}} = 1.264911064$
+</center>
+<center>
+$z = 1.265$
+</center>
+<center>
+$p = P(Z > 1.265) = 1-P(Z < 1.265) = 1-0.897 = 0.1029$
+</center>
+<center>
+$p = 0.103$
+</center>
+<center>
+Since
+$p > a$,
+we conclude that there is no significant evidence to support the claim that the average battery life exceeds 40 hours.
+</center>
+
+###
+
+B. 
+What is the P-value for the test in part A?
+
+<center>
+$p = P(Z > 1.265) = 1-P(Z < 1.265) = 1-0.897 = 0.1029$
+</center>
+
+###
+
+C. 
+What is the β-error for the text in part B if the true mean life is 42 hours?
+
+<center>
+$\beta = P(Z < 1.645 - \frac{2\sqrt10}{1.25})$
+</center>
+<center>
+$\beta = P(Z<-3.409) = 0.000326$
+</center>
+
+###
+
+D. 
+What sample size would be required to ensure that β does not exceed 0.10 if the true mean is 44 hours?
+
+<center>
+$n = \frac{(z_a + z_\beta)^2o^2}{(x-\mu)^2}$
+</center>
+
+<center>
+$\mu = 44$, $\beta <0.1$, $z_{1-0.1} = z_{0.9} = 1.29$
+</center>
+
+<center>
+$n = \frac{(1.65 + 1.29)^21.25^2}{(44-40)^2} = 0.844$
+</center>
+
+<center>
+$n = 1$
+</center>
+
+###
+
+E. 
+Explain how you could answer the question in part A by calculating an appropriate confidence bound on battery life.
+
+<center>
+$(-\infty, \mu + z_a\frac{o}{\sqrt(n)})$
+</center>
+<center>
+$40.5 + 1.65\frac{1.25}{\sqrt(10)} = 41.152$
+</center>
+<center>
+$(-\infty, 41.152)$
+</center>
+<center>
+Since the average battery life of 40 is on the confidence bound, we don't have enough evidence.
+</center>
+
+***
+
+2. Brand A gasoline was used in 16 similar automobiles under identical conditions. The corresponding sample of 16 values (miles per gallon) had mean 19.6 and standard deviation 0.4. Under the same conditions, high-power brand B gasoline gave a sample of 16 values with mean 20.2 and standard deviation 0.6. Is the mileage of B significantly better than that of A? Assume normality. Test the hypothesis using both P-value and fixed significance level with α=0.05 approaches (if possible).
+
+<center>
+n = 16,
+</center>
+<center>
+$\mu_{a}$ = 19.6
+</center>
+<center>
+$\sigma_{a}$ = 0.4
+</center>
+<center>
+$\mu_{b}$ = 20.2
+</center>
+<center>
+$\sigma_{b}$ = 0.6
+</center>
+
+###
+
+<center>
+$H_{0}$ = $\mu_{a}$ - $\mu_{b}$ = 0
+</center>
+<center>
+$H_{1}$ = $\mu_{a}$ - $\mu_{b}$ > 0
+</center>
+
+###
+
+<center>
+$\sigma^2_{a}$ = $0.4^2$
+</center>
+<center>
+$s_{a}$ = 0.16
+</center>
+<center>
+$\sigma^2_{b}$ = $0.6^2$
+</center>
+<center>
+$s_{b}$ = 0.36
+</center>
+
+###
+
+<center>
+$z_0$ = $\frac{(\mu_{a}-\mu_{b})-D_0}{\sqrt{\frac{s_{a}}{n_{a}} + \frac{s_{b}}{n_{b}}}}$
+</center>
+
+###
+
+<center>
+$z_0$ = $\frac{(19.6-20.2)-0}{\sqrt{\frac{0.16}{16} + \frac{0.36}{16}}}$
+</center>
+
+###
+
+<center>
+$z_0$ = −3.328201177
+</center>
+
+###
+
+<center>
+$z_0$ = −3.33
+</center>
+
+###
+
+<center>
+p = .00043 < $a = 0.05$
+</center>
+
+###
+
+<center>
+I therefore conclude that the mileage of brand B gasoline is **not significantly better** than that of brand A gasoline.
+</center>
+
+
+
+
+
+
+
